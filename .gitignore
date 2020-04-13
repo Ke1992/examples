@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# 自定义
+package-lock.json
+whistle-plug/demo/*/lib
+whistle-plug/demo/*/index.js

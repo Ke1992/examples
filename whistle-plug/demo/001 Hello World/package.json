@@ -1,0 +1,31 @@
+{
+  "name": "whistle.plug-example",
+  "version": "1.0.0",
+  "description": "whistle plug example",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && w2 run",
+    "clean": "npx rimraf -rf index.js lib",
+    "build": "npm run clean && npx tsc --build ./src/tsconfig.json"
+  },
+  "keywords": [
+    "whistle",
+    "plug"
+  ],
+  "author": "Ke1992",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-static": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-static": "^5.0.0"
+  }
+}

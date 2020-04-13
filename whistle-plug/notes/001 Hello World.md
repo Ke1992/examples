@@ -127,4 +127,4 @@ export {
 3、命令行中执行w2 stop，将whistle停止掉  
 4、项目目录下执行npm run dev  
 5、打开whistle，选中Plugins，打开plug-example页面，如下所示:  
-![Hello World](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/001%20Hello%20World/Hello%20World.png "Hello World")
+![Hello World](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/Hello%20World.png "Hello World")

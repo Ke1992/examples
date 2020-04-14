@@ -3,9 +3,9 @@
 node v10.13.0、whistle
 ## 二、新建工程
 ### 1、创建项目
-* 新建文件夹，并设置一个项目名称
-* 执行npm init，其中name需要符合whistle.your-plugin-name规范
-* 增加.gitignore，并添加忽略package-lock.json
+(1)、新建文件夹，并设置一个项目名称  
+(2)、执行npm init，其中name需要符合whistle.your-plugin-name规范  
+(3)、增加.gitignore，并添加忽略package-lock.json  
 ### 2、增加TypeScript
 项目目录下执行npm install --save-dev typescript
 ### 3、增加Eslint

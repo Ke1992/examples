@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+    </head>
+    <body>
+        <section id="main" class="main">
+            <div class="btn">新增规则</div>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th style="width: 300px;">URL</th>
+                        <th style="width: 560px;">文件路径</th>
+                        <th style="width: 140px;">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="none hide">
+                        <td colspan="3">当前暂无配置的规则</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="dialog" class="dialog hide">
+            <div class="content">
+                <div class="title">文件映射</div>
+                <div class="row">
+                    <span>URL: </span>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <span>文件路径: </span>
+                    <input type="text">
+                </div>
+                <div class="btn cancel" data-type="cancel">取消</div>
+                <div class="btn" data-type="confirm">确定</div>
+            </div>
+        </div>
+        <template id="item">
+            <tr>
+                <td>{url}</td>
+                <td>{file}</td>
+                <td>
+                    <a href="javascript: ;" data-type="modify">修改</a>
+                    <a href="javascript: ;" data-type="delete">删除</a>
+                </td>
+            </tr>
+        </template>
+        <script src="./jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

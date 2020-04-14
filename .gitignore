@@ -106,4 +106,5 @@ dist
 # 自定义
 package-lock.json
 whistle-plug/demo/*/lib
+whistle-plug/demo/*/router
 whistle-plug/demo/*/index.js

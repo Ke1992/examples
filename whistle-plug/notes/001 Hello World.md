@@ -111,6 +111,7 @@ export {
     <head>
         <meta charset="UTF-8">
         <title>Example</title>
+    </head>
     <body>
         <h1>Whistle Plug Example</h1>
     </body>

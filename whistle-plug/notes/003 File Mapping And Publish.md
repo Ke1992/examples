@@ -113,7 +113,7 @@ try {
 访问任意链接，并在链接后追加callback或者cb参数，则会自动替换或者主动添加本地文件中的callback字符串
 ![文件映射](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/file-mapping.png "文件映射")
 ## 四、发布
-1、项目目录下打开命令行，执行npm login进行登录
-2、命令行中执行npm publish，发布成功后执行npm install -g whistle.plug-example进行安装
-3、打开whistle，选中Plugins选项卡，如下所示则代表安装成功
+1、项目目录下打开命令行，执行npm login进行登录  
+2、命令行中执行npm publish，发布成功后执行npm install -g whistle.plug-example进行安装  
+3、打开whistle，选中Plugins选项卡，如下所示则代表安装成功  
 ![发布](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/publish.png "发布")

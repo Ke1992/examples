@@ -107,4 +107,5 @@ dist
 package-lock.json
 whistle-plug/demo/*/lib
 whistle-plug/demo/*/router
+whistle-plug/demo/*/shared
 whistle-plug/demo/*/index.js

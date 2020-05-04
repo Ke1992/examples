@@ -392,5 +392,5 @@ static init() {
 !isInit && Page.update();
 ```
 ## 五、验证测试
-![列表](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/list.png "列表")
-![弹框](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/dialog.png "弹框")
+![列表](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/002/list.png "列表")
+![弹框](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/002/dialog.png "弹框")

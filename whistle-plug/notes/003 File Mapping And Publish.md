@@ -44,7 +44,7 @@ export {
 };
 ```
 ### 3、预览结果
-![Server](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/server.png "Server")
+![Server](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/003/server.png "Server")
 ## 二、文件映射
 1、向src/lib/server.ts文件中添加fs模块的引用:
 ```
@@ -111,9 +111,9 @@ try {
 ```
 ## 三、验证测试
 访问任意链接，并在链接后追加callback或者cb参数，则会自动替换或者主动添加本地文件中的callback字符串
-![文件映射](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/file-mapping.png "文件映射")
+![文件映射](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/003/file-mapping.png "文件映射")
 ## 四、发布
 1、项目目录下打开命令行，执行npm login进行登录  
 2、命令行中执行npm publish，发布成功后执行npm install -g whistle.plug-example进行安装  
 3、打开whistle，选中Plugins选项卡，如下所示则代表安装成功  
-![发布](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/publish.png "发布")
+![发布](https://raw.githubusercontent.com/Ke1992/examples/master/whistle-plug/docs/assets/003/publish.png "发布")

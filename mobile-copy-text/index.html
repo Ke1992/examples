@@ -58,9 +58,9 @@
                     }
                     try {
                         const result = document.execCommand('copy');
-                        alert(result ? '内容已复制' : '复制失败，请重试~');
+                        document.getElementById("tips").innerText = result ? '内容已复制' : '复制失败，请重试~';
                     } catch (e) {
-                        alert('复制失败，请重试~');
+                        document.getElementById("tips").innerText = '复制失败，请重试~';
                     }
                     // 让输入框失去焦点
                     input.blur();
@@ -82,5 +82,6 @@
             </div>
         </div>
         <div id="btn" class="btn">点击复制</div>
+        <div id="tips" class="text"></div>
     </body>
 </html>

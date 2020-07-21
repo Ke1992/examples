@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>移动端文字复制</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+        <style type="text/css">
+            body {
+                margin: 0;
+                color: #666;
+            }
+            .main {
+                position: relative;
+            }
+            .text {
+                font-size: 18px;
+                line-height: 80px;
+                text-align: center;
+            }
+            .input_wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1px;
+                opacity: 0;
+                overflow: hidden;
+                user-select: none;
+            }
+            .input_wrap input {
+                width: 1px;
+                resize: none;
+                border: none;
+                outline: none;
+                user-select: none;
+                color: transparent;
+                background: transparent;
+            }
+            .btn {
+                color: #fff;
+                line-height: 50px;
+                font-weight: bold;
+                text-align: center;
+                background-color: #abcdef;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload = () => {
+                // 监听按钮点击事件
+                document.getElementById('btn').onclick = () => {
+                    const input = document.getElementById('input');
+                    input.value = document.getElementById('text').innerText;
+                    // 选择需要复制的文本
+                    input.focus();
+                    if (input.setSelectionRange) {
+                        input.setSelectionRange(0, input.value.length);
+                    } else {
+                        input.select();
+                    }
+                    try {
+                        const result = document.execCommand('copy');
+                        alert(result ? '内容已复制' : '复制失败，请重试~');
+                    } catch (e) {
+                        alert('复制失败，请重试~');
+                    }
+                    // 让输入框失去焦点
+                    input.blur();
+                    // 让移动端的输入键盘自动收回
+                    document.activeElement.blur();
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div id="text" class="text">这里是待复制的文案~！</div>
+            <div class="input_wrap">
+                <input
+                    id="input"
+                    type="text"
+                    readonly="true"
+                >
+            </div>
+        </div>
+        <div id="btn" class="btn">点击复制</div>
+    </body>
+</html>
